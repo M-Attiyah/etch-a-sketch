@@ -1,0 +1,164 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #151515;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 1385px;
+    height: 770px;
+    background-color: rgba(255, 255, 255, 0.103);
+    display: flex;
+    padding: 2rem;
+    border-radius: 31px;
+}
+
+.container .control {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 0;
+    flex: 1;
+}
+
+.container .control #control-buttons {
+    background-color: #ffffff0f;
+    border-radius: 15px;
+}
+
+.container .control #control-buttons form{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .control #control-buttons form div button,
+.container .control #control-buttons form div #color-change {
+    background-color: #f7f7f71c;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff82;
+    width: 144px;
+    height: 66px;
+    font-size: 14px;
+}
+
+.container .control #control-buttons form div #color-change {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .control #control-buttons form div button:hover,
+.container .control #control-buttons form div #color-change input:hover {
+    opacity: .6;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.container .control #changeGridText {
+    display: none;
+}
+
+.container .control #changeGridText form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+.container .control #changeGridText form input[type="text"] {
+    height: 50px;
+    background-color: #ffffff0f;
+    border: none;
+    border-radius: 9px;
+    padding: 0 1rem;
+    outline: none;
+    color: #ffffff82;
+    flex-grow: 1;
+}
+
+
+.container .control #changeGridText form input[type="submit"] {
+    height: 50px;
+    background-color: #ffffff82;
+    border: none;
+    border-radius: 9px;
+    padding: 0 1rem;
+    color: #181818ed;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.container .control #changeGridText form input[type="submit"]:hover {
+    opacity: .6;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.container footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    color: #ffffff82;
+    font-size: 20px;
+}
+
+.container footer p:not(:first-child) {
+    color: #f6f6f6d5;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.container .grid {
+    flex: 1;
+    background: #ffffff0f;
+    border-radius: 15px;
+}
+
+.container .grid {
+    display: grid;
+    position: relative;
+}
+
+.container .grid div {
+    background-color: #ffffff0f;
+    border: 1px solid #000;
+}
+
+.container .grid .over #Msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #151515;
+    color: #ffffff82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+.container .gridNum {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: #151515;
+    color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 4px;
+}
